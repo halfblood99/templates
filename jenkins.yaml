@@ -3,8 +3,6 @@ services:
     build: .
     expose:
     - "9090"
-    environment:
-      ENV: PROD
   dnmonster:
     image: amouat/dnmonster:1.0
   redis:
