@@ -1,3 +1,4 @@
+
 services:
   dind:
     image: docker:dind
@@ -10,9 +11,7 @@ services:
       - jenkins-data:/var/jenkins_home
 
   jenkins:
-    build:
-      context: contextPath
-      dockerfile: Dockerfile
+    build: .
     privileged: true
     ports:
       - 8080:8080
